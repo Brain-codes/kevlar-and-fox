@@ -112,6 +112,7 @@
 //   );
 // }
 
+import Hero from "@/components/landing-page/Hero";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
 
@@ -149,8 +150,9 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main className="relative z-10">
-        {/* <Hero id="home" />
+      <main className="">
+        <Hero id="home" />
+        {/*
         <About id="about" />
         <WhatWeDo id="services" />
         <ContactUs id="contact-us" /> */}

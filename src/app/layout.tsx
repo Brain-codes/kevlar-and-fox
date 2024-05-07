@@ -1,8 +1,34 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "@next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+const gilmer = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Gilmer-Light.otf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/Gilmer-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/Gilmer-Medium.otf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/Gilmer-Bold.otf",
+      weight: "700",
+    },
+    {
+      path: "../../public/fonts/Gilmer-Heavy.otf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-gilmer",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${gilmer.variable} font-sans`}>{children}</body>
     </html>
   );
 }

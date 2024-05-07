@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-gilmer)"],
+      },
       colors: {
         brandWhite: "#CFE7FF",
         brandBlack: "#000511",
