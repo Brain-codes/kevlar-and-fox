@@ -112,9 +112,9 @@
 //   );
 // }
 
-import Hero from "@/components/landing-page/Hero";
-import Navbar from "@/components/navbar/Navbar";
-import Image from "next/image";
+
+import Wrapper from "./Wrapper";
+
 
 export const metadata = {
   title: "Ape Insetto ",
@@ -149,15 +149,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Navbar />
-      <main className="">
-        <Hero id="home" />
-        {/*
-        <About id="about" />
-        <WhatWeDo id="services" />
-        <ContactUs id="contact-us" /> */}
-      </main>
-      {/* <Footer /> */}
+<Wrapper/>
     </>
   );
 }

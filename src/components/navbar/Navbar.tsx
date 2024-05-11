@@ -33,7 +33,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex fixed top-0 left-0 w-full items-center justify-between py-5 px-[5%] ">
+      <div className="flex bg-transparent fixed top-0 left-0 w-full items-center justify-between py-5 px-[5%] z-[23]">
         <div className="flex gap-2 w-[200px] ">
           <Image
             src="/images/logo-one.svg"
@@ -57,7 +57,7 @@ const Navbar = () => {
       <div
         className={`bg-brandBlack ${
           isOpenNavbar ? " top-[0%] " : "top-[-100%] "
-        } h-[100%]  w-full fixed transition-all duration-500 ease-in-out z-10`}
+        } h-[100%]  w-full fixed transition-all duration-500 ease-in-out z-[30]`}
       >
         <div
           className={` ${

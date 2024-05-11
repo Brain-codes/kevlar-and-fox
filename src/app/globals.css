@@ -7,3 +7,18 @@
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.whole-cont {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+#custom-stroke {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ecececcf;
+}
