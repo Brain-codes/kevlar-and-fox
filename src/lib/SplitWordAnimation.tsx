@@ -28,7 +28,7 @@ const SplitWordAnimation = ({
               opacity: [0, 1],
               easing: "easeInOutQuad",
               duration: duration,
-              delay: (_el, i) => 10 * (i + 1),
+              delay: (_el: any, i: number) => 10 * (i + 1),
             });
 
             observer.unobserve(entry.target); // Stop observing after animation
