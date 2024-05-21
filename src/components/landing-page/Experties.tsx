@@ -9,19 +9,19 @@ const Experties = () => {
     <div>
       <div className="bg-brandBlack py-20 px-[5%]">
         <div className="relative">
-          <h1 className="text-white font-[300] text-[50px] flex items-center gap-3">
+          <h1 className="text-white font-[300] md:text-[50px] text-[40px] flex items-center gap-3">
             Our
             <span className="text-lightBlue font-[800]">Experties</span>
-            <StarIcon className="text-lightBlue w-10 h-10" />
+            <StarIcon className="text-lightBlue md:w-10 md:h-10 w-5 h-5" />
           </h1>
-          <Underline className="text-lightBlue absolute top-[-60%] ml-10 rotate-[-180deg]" />
+          <Underline className="text-lightBlue absolute top-[-60%] ml-10 rotate-[-180deg]md:block hidden" />
         </div>
-        <p className="font-[400] text-[17px] text-white">
+        <p className="md:font-[400] font-[200] md:text-[17px] text-[12px] text-white">
           Tailored to propel your business to unprecedented heights
         </p>
       </div>
       <div
-        className="py-[7%]"
+        className="py-[3%]"
         style={{
           backgroundImage: "url(/images/lightBG.svg)",
           width: "100%",
@@ -31,7 +31,7 @@ const Experties = () => {
         }}
       >
         {ExpertiesItem.items.map((data, index) => (
-        <ExpertiesTiles
+          <ExpertiesTiles
             title={data.title}
             imageLeft={data.imageLeft}
             items={data.items}

@@ -9,7 +9,7 @@ type IntroProps = {
 
 const Intro = ({ id }: IntroProps) => {
   return (
-    <div className="relative bg-brandWhite mix-blend-difference">
+    <div className="relative bg-brandWhite">
       <div className="px-[5%] z-10 relative pb-[30%] pt-[10%]">
         <h1 className="font-light text-[48px] text-brandBlack ">
           <SplitWordAnimation

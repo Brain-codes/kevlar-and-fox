@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Underline } from "../../../public/images/rendered-icon";
 import Image from "next/image";
@@ -10,34 +11,38 @@ const About = ({ id }: AboutProps) => {
   return (
     <div className="bg-brandWhite py-20 relative">
       <div className="pl-[5%] relative">
-        <h1 className="text-deepBlue font-extrabold text-[68px] ">About Us</h1>
-        <Underline className="text-brandBlack absolute bottom-[-50%] ml-10" />
+        <h1 className="text-deepBlue font-extrabold md:text-[68px] text-[40px] ">
+          About Us
+        </h1>
+        <Underline className="text-brandBlack absolute bottom-[-50%] ml-10 md:block hidden" />
       </div>
-      <div className="px-[5%] py-[10%] flex justify-between md:flex-row flex-col items-center">
-        <div className="md:w-[40%] w-full  text-brandBlack font-[400] text-[20px] text-justify flex flex-col gap-20 leading-[33.8px]">
+      <div className="px-[5%] py-[10%] flex justify-between md:flex-row flex-col items-centermd:gap-0 gap-10">
+        <div className="md:w-[40%] w-full  text-brandBlack font-[400] md:text-[20px] text-[12px] text-justify flex flex-col md:gap-20 gap-10 leading-[33.8px]">
           <p className="">
             Our goal is simple yet profound: to empower businesses with
-            innovative solutions that drive success. We believe in challenging
-            the status quo, pushing boundaries, and redefining what&apos;s
-            possible.
+            innovative solutions that drive success. We specialize in
+            revolutionizing brand visibility and market presence through our
+            comprehensive suite of services in Public Relations, Digital
+            Transformation, and Training.
           </p>
           <p className="">
-            We understand that every business is unique, which is why we take a
-            personalized approach to every client. From initial consultation to
-            implementation and beyond, we&apos;re dedicated to understanding
-            your specific needs and delivering tailored solutions that exceed
-            your expectations.
+            We understand that many organizations struggle to navigate the
+            complexities of modern marketing and digitalization, often resulting
+            in missed opportunities and stagnant growth. That's where we come
+            in. Our seasoned team of experts collaborate closely with clients to
+            develop tailored solutions that produce tangible results.
           </p>
           <p className="">
-            Our team of experts combines creativity with strategic thinking to
-            develop innovative solutions that address your challenges and
-            position your business for long-term success. Your success is our
-            success, and we&apos;re committed to going above and beyond to help
-            you achieve your goals.
+            Whether it's crafting compelling PR campaigns to enhance individual
+            and organizational reputations, implementing cutting-edge digital
+            technologies to optimize operations and customer experiences, or
+            delivering customized training programs to upskill teams for success
+            in the digital age, we're committed to empowering businesses to
+            thrive in today's competitive landscape.
           </p>
         </div>
 
-        <div className="relative w-[40%]">
+        <div className="relative md:w-[40%] w-full">
           <Image
             src="/images/about-img.svg"
             alt="logo"

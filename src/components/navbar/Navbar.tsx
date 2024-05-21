@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { Burger, CloseNav } from "../../../public/images/rendered-icon";
 import Link from "next/link";
@@ -21,48 +21,87 @@ const NavItem = ({ item, isOpenNavbar, closeNavbar }: any) => {
       <p className="uppercase font-light text-[12px]">{item.title}</p>
       <h1 className="uppercase font-bold text-[58px] leading-[48px]">
         {item.heading}
-      </h1>{" "}
+      </h1>
     </Link>
   );
 };
 
 const Navbar = () => {
   const [isOpenNavbar, setIsOpenNavbar] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(
+    "up"
+  );
+
   const toggleNavbar = () => {
     setIsOpenNavbar(!isOpenNavbar);
   };
+
+  const handleScroll = useCallback(() => {
+    if (typeof window === "undefined") return;
+
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY >= 500 && lastScrollY < 500) {
+      console.log("Reached 200px height");
+    }
+
+    if (currentScrollY < lastScrollY) {
+      if (scrollDirection !== "up") {
+        console.log("Scrolling up");
+        setScrollDirection("up");
+      }
+    } else if (currentScrollY > lastScrollY) {
+      if (scrollDirection !== "down") {
+        console.log("Scrolling down");
+        setScrollDirection("down");
+      }
+    }
+
+    setLastScrollY(currentScrollY);
+  }, [lastScrollY, scrollDirection]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+
   return (
     <>
-      <div className="flex bg-transparent fixed top-0 left-0 w-full items-center justify-between py-5 px-[5%] z-[23]">
-        <div className="flex gap-2 w-[200px] ">
+      <div
+        className={`${
+          typeof window !== "undefined" && window.scrollY >= 200
+            ? "bg-brandBlack"
+            : "bg-transparent"
+        } ${
+          scrollDirection === "up" ? "top-0" : "top-[-100%]"
+        } flex transition-all duration-500 ease-in-out fixed left-0 w-full items-center justify-between py-5 px-[5%] z-[23]`}
+      >
+        <div className="flex gap-2 md:w-[200px] w-[100px]">
           <Image
-            src="/images/logo-one.svg"
+            src="/images/logo-full.svg"
             alt="Logo"
             width={60}
             height={24}
             priority
-            className=""
-          />
-          <Image
-            src="/images/logo-two.svg"
-            alt="Logo"
-            width={100}
-            height={44}
-            priority
-            className="mix-blend-difference  w-[65%]"
+            className="w-full"
           />
         </div>
         <Burger onClick={toggleNavbar} className="cursor-pointer" />
       </div>
       <div
         className={`bg-brandBlack ${
-          isOpenNavbar ? " top-[0%] " : "top-[-100%] "
-        } h-[100%]  w-full fixed transition-all duration-500 ease-in-out z-[30]`}
+          isOpenNavbar ? "top-0" : "top-[-100%]"
+        } h-[100%] w-full fixed transition-all duration-500 ease-in-out z-[30]`}
       >
         <div
-          className={` ${
+          className={`${
             isOpenNavbar ? "opacity-1" : "opacity-0"
-          }   transition-opacity duration-500 flex items-center justify-between py-5 px-[5%] `}
+          } transition-opacity duration-500 flex items-center justify-between py-5 px-[5%]`}
         >
           <div className="flex gap-2 w-[200px]">
             <Image
@@ -79,7 +118,7 @@ const Navbar = () => {
               width={100}
               height={44}
               priority
-              className="mix-blend-difference  w-[65%]"
+              className="mix-blend-difference w-[65%]"
             />
           </div>
           <CloseNav onClick={toggleNavbar} className="cursor-pointer" />
@@ -95,10 +134,10 @@ const Navbar = () => {
             />
           ))}
         </div>
-        <div
+        {/* <div
           className={`fixed right-20 ${
-            isOpenNavbar ? " bottom-10" : " top-[-200%]"
-          }  `}
+            isOpenNavbar ? "bottom-10" : "top-[-200%]"
+          }`}
         >
           <Image
             src="/images/navCopi.svg"
@@ -108,9 +147,9 @@ const Navbar = () => {
             priority
             className={`w-[300px] delay-[700ms] transition-all duration-500 ${
               isOpenNavbar ? "opacity-1" : "opacity-0"
-            } `}
+            }`}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

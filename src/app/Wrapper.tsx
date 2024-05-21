@@ -12,29 +12,36 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import CustomCursor from "@/lib/CustomCursor";
 import useSmoothScroll from "@/lib/useSmoothScroll";
 import Experties from "@/components/landing-page/Experties";
+import CaseStudy from "@/components/landing-page/CaseStudy";
+import Contact from "@/components/landing-page/Contact";
+import Action from "@/components/landing-page/Action";
+import Footer from "@/components/landing-page/Footer";
 
 const Wrapper = () => {
   useSmoothScroll();
 
   return (
     <>
-      <ParallaxProvider>
-        <CustomCursor />
-        <Navbar />
-        <main className="flex flex-col mix-blend-difference whole-cont">
-          <Hero id="home" />
-          <Intro id="intro" />
-          <About id="about" />
-          <MissionVision />
-          <CoreValues />
-          <Experties />
-          {/*
+      {/* <ParallaxProvider> */}
+      {/* <CustomCursor /> */}
+      <Navbar />
+      <main className="flex flex-col mix-blend-difference whole-cont">
+        <Hero id="home" />
+        {/* <Intro id="intro" /> */}
+        <About id="about" />
+        <MissionVision />
+        <CoreValues />
+        <Experties />
+        <CaseStudy />
+        <Contact />
+        <Action />
+        {/*
         <About id="about" />
         <WhatWeDo id="services" />
         <ContactUs id="contact-us" /> */}
-        </main>
-        {/* <Footer /> */}
-      </ParallaxProvider>
+      </main>
+      <Footer />
+      {/* </ParallaxProvider> */}
     </>
   );
 };

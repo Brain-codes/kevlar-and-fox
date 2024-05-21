@@ -10,47 +10,55 @@ const ExpertiesTiles = ({
   items,
 }: EachExpertiesProp) => {
   return (
-    <div>
+    <div
+      className={`${
+        imageLeft ? "" : "bg-brandBlack text-brandWhite "
+      } md:mt-20 py-20`}
+    >
       {" "}
-      <h1 className="px-[5%] mb-20 flex gap-4 items-center font-[800] text-[73px] text-brandBlack">
-        <StarIcon className="text-brandBlack w-[80px] h-[80px]" />
+      <h1 className="px-[5%] mb-20 flex gap-4 items-center font-[800] md:text-[73px] text-[40px] leading-[48px]">
+        <StarIcon className=" md:w-[80px] md:h-[80px]" />
         {title}
       </h1>
-      <div className="pr-[5%] flex md:flex-row flex-col">
+      <div
+        className={`${
+          imageLeft ? "md:pr-[5%] pr-0" : "md:pl-[5%] pl-0 justify-between"
+        }  flex md:flex-row flex-col md:gap-0 gap-20`}
+      >
         {imageLeft && (
           <div className="md:w-[45%] w-full">
             <Image
               src={image}
               alt="Public Relations"
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
               priority
               className="w-full object-contain"
             />
           </div>
         )}
-        <div className="md:w-[45%] w-full flex flex-col justify-between">
+        <div className="md:w-[45%] w-[91%] flex flex-col md:mx-0 mx-[5%] md:gap-0 gap-10 justify-between">
           {items.map((data, index) => (
             <div key={index}>
-              <div className="flex gap-3 items-center">
-                <StarIcon className="text-brandBlack w-[23px] h-[23px]" />
-                <h1 className="font-[800] text-[22px] text-brandBlack">
+              <div className="flex gap-3 items-center ">
+                <StarIcon className=" w-[23px] h-[23px]" />
+                <h1 className="font-[800] md:text-[22px] text-[18px] md:leading-light leading-[21px]">
                   {data.title}
                 </h1>
               </div>
-              <p className="font-[400] text-[17px] text-brandBlack">
+              <p className="font-[400] md:text-[17px] text-[12px] md:mt-0 mt-3">
                 {data.description}
               </p>
             </div>
           ))}
         </div>
         {!imageLeft && (
-          <div className="md:w-[45%] w-full">
+          <div className="md:w-[45%] w-full ">
             <Image
               src={image}
               alt="Public Relations"
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
               priority
               className="w-full object-contain"
             />
