@@ -112,36 +112,34 @@
 //   );
 // }
 
-
 import Wrapper from "./Wrapper";
 
-
 export const metadata = {
-  title: "Ape Insetto ",
+  title: "Kevlar & Fox Consulting",
   description:
-    "Ape Insetto  is a distinguished and fully licensed company in Nigeria, specializing in general contracting services and logistics. With an unwavering commitment to excellence, our team leverages their expertise to deliver exceptional results.",
-  url: "https://imkashgroup.com/ape-insetto",
-  siteName: "Imkash | Ape Insetto ",
-  themeColor: "#0E5C8A",
+    "Elevating organizations through expert PR strategies, cutting-edge digital transformations, and empowering training solutions.",
+  url: "https://kevlarandfox.com",
+  siteName: "Kevlar & Fox | Home Page ",
+  themeColor: "#3B9BFF",
   images: [
     {
-      url: "/images/ape-insetto/logo.svg",
+      url: "/images/logo-full.svg",
       width: 800,
       height: 600,
     },
     {
-      url: "/images/ape-insetto/logo.svg",
+      url: "/images/logo-full.svg",
       width: 1800,
       height: 1600,
     },
   ],
   icons: {
-    icon: "/images/ape-insetto/logo.svg",
-    apple: "/images/ape-insetto/logo.svg",
-    shortcut: "/images/ape-insetto/logo.svg",
+    url: "/images/logo-one.svg",
+    apple: "/images/logo-one.svg",
+    shortcut: "/images/logo-one.svg",
     other: {
-      rel: "ape insetto logo",
-      url: "/images/ape-insetto/logo.svg",
+      rel: "kevlar and fox logo",
+      url: "/images/logo-one.svg",
     },
   },
 };
@@ -149,7 +147,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-<Wrapper/>
+      <Wrapper />
     </>
   );
 }
