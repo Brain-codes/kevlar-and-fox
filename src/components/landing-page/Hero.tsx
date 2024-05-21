@@ -39,7 +39,7 @@ const Hero = ({ id }: HeroProps) => {
 
   return (
     <div
-      className="flex  md:flex-row flex-col-reverse  justify-between  items-center z-10 "
+      className="flex  md:flex-row flex-col-reverse bg-brandBlack justify-between  items-center z-10 "
       style={{
         backgroundImage: "url(/images/hero-bg.svg)",
         width: "100%",
