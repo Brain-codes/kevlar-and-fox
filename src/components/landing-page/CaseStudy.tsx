@@ -2,10 +2,13 @@
 import React from "react";
 import { StarIcon, Underline } from "../../../public/images/rendered-icon";
 import Image from "next/image";
-
-const CaseStudy = () => {
+type AboutProps = {
+  id: string;
+};
+const CaseStudy = ({ id }: AboutProps) => {
   return (
     <div
+      id={id}
       className="bg-brandBlack flex flex-col items-center py-20"
       style={{
         backgroundImage: "url(/images/hero-bg.svg)",
@@ -109,13 +112,11 @@ const CaseStudy = () => {
         </div>{" "}
         {/* ======================= */}
         <div className="flex gap-10 w-full relative">
-             <p className="font-[400] text-white md:text-[20px] text-[12px]">
-              03
+          <p className="font-[400] text-white md:text-[20px] text-[12px]">03</p>
+          <div className="md:w-auto w-[100%]">
+            <p className="font-[400] text-white md:text-[20px] text-[12px]">
+              Case Study
             </p>
-            <div className="md:w-auto w-[100%]">
-              <p className="font-[400] text-white md:text-[20px] text-[12px]">
-                Case Study
-              </p>
             <h1 className="font-bold text-white md:text-[73px] sm:text-[25px] text-[40px] uppercase leading-tight">
               IT Incident Management <br /> Transformation
             </h1>

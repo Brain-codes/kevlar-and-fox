@@ -32,7 +32,7 @@ const Wrapper = () => {
         <MissionVision />
         <CoreValues />
         <Experties id="services" />
-        <CaseStudy />
+        <CaseStudy id="case-studies" />
         <Contact id="contact" />
         <Action />
         {/*

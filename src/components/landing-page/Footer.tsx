@@ -3,6 +3,13 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
   return (
     <div className="bg-brandBlack flex md:flex-row flex-col md:gap-0 gap-10 md:items-end justify-between py-10 px-[5%] w-full">
       <div className="">
@@ -17,43 +24,46 @@ const Footer = () => {
       </div>
       <div className="flex flex-col gap-10 w-[25%]">
         <Link
-          href="#"
+          href="/#home"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           Home
         </Link>{" "}
         <Link
-          href="#"
+          href="/#about"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           About us
         </Link>{" "}
         <Link
-          href="#"
+          href="/#services"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           services
         </Link>{" "}
         <Link
-          href="#"
+          href="https://www.blog.kevlarandfox.com"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           blog
         </Link>{" "}
         <Link
-          href="#"
+          href="/#contact"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           contact us
         </Link>{" "}
         <Link
-          href="#"
+          href="/#case-studies"
           className="uppercase font-[800] text-brandWhite text-[16px]"
         >
           case studies
         </Link>
       </div>
-      <div className="flex flex-col items-center">
+      <div
+        className="flex flex-col items-center cursor-pointer"
+        onClick={scrollToTop}
+      >
         <div className="">
           <Image
             src="/images/arrow-up.svg"

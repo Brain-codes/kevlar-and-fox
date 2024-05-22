@@ -62,7 +62,7 @@ const About = ({ id }: AboutProps) => {
                 className="w-[17px] object-contain absolute top-5 left-5 "
               />
               <p className="ml-5 mb-5 mt-4 text-[300] ">
-                Redefine norms and elevate beyond traditional boundaries
+                Bespoke Solutions for Complex Challenges
               </p>
               <Image
                 src="/images/quote.svg"
