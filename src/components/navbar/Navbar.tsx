@@ -6,20 +6,42 @@ import Link from "next/link";
 import { NavItems } from "@/constants";
 
 const NavItem = ({ item, isOpenNavbar, closeNavbar }: any) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerHeight <= 775);
+    };
+
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
+
   const handleClick = () => {
     closeNavbar(); // Close the navbar when a link is clicked
   };
+
   return (
     <Link
       href={item.url}
       className={`text-white leading-tight ${
         isOpenNavbar ? "opacity-1" : "opacity-0"
-      } transition-all duration-500 w-fit hover:text-lightBlue`}
+      } ${
+        isSmallScreen ? "mt-7" : "mt-12"
+      } transition-all duration-500 w-fit hover:text-lightBlue `}
       style={{ transitionDelay: `${item.delay}ms` }}
       onClick={handleClick}
     >
       <p className="uppercase font-light text-[12px]">{item.title}</p>
-      <h1 className="uppercase font-bold text-[58px] leading-[48px]">
+      <h1
+        className={`${
+          isSmallScreen ? "text-[38px]" : "text-[58px]"
+        } uppercase font-bold leading-[48px]`}
+      >
         {item.heading}
       </h1>
     </Link>
@@ -95,7 +117,7 @@ const Navbar = () => {
       </div>
       <div
         className={`bg-brandBlack ${
-          isOpenNavbar ? "top-0" : "top-[-100%]"
+          isOpenNavbar ? "top-0" : "top-[-200%]"
         } h-[100%] w-full fixed transition-all duration-500 ease-in-out z-[30]`}
       >
         <div
@@ -118,13 +140,13 @@ const Navbar = () => {
               width={100}
               height={44}
               priority
-              className="mix-blend-difference w-[65%]"
+              className="w-[65%]"
             />
           </div>
           <CloseNav onClick={toggleNavbar} className="cursor-pointer" />
         </div>
         {/* NAV ITEMS */}
-        <div className="px-[5%] mt-20 flex flex-col gap-12">
+        <div className="px-[5%] md:mt-7 mt-0 flex flex-col ">
           {NavItems.items.map((child, index) => (
             <NavItem
               key={index}

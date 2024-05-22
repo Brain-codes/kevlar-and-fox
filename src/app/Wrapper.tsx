@@ -25,7 +25,7 @@ const Wrapper = () => {
       {/* <ParallaxProvider> */}
       {/* <CustomCursor /> */}
       <Navbar />
-      <main className="flex flex-col mix-blend-difference whole-cont">
+      <main className="flex flex-col whole-cont">
         <Hero id="home" />
         {/* <Intro id="intro" /> */}
         <About id="about" />

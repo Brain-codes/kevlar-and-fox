@@ -28,7 +28,7 @@ const CustomCursor = () => {
     height: "60px",
     borderRadius: "50%",
     backgroundColor: "white",
-    mixBlendMode: "difference",
+    // mixBlendMode: "difference",
     position: "fixed",
     zIndex: 9999,
     pointerEvents: "none",
