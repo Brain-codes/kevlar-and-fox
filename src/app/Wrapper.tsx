@@ -18,7 +18,7 @@ import Action from "@/components/landing-page/Action";
 import Footer from "@/components/landing-page/Footer";
 
 const Wrapper = () => {
-  useSmoothScroll();
+  // useSmoothScroll();
 
   return (
     <>
@@ -31,9 +31,9 @@ const Wrapper = () => {
         <About id="about" />
         <MissionVision />
         <CoreValues />
-        <Experties />
+        <Experties id="services" />
         <CaseStudy />
-        <Contact />
+        <Contact id="contact" />
         <Action />
         {/*
         <About id="about" />

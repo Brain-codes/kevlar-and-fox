@@ -9,7 +9,7 @@ type AboutProps = {
 
 const About = ({ id }: AboutProps) => {
   return (
-    <div className="bg-brandWhite py-20 relative">
+    <div id={id} className="bg-brandWhite py-20 relative">
       <div className="pl-[5%] relative">
         <h1 className="text-deepBlue font-extrabold md:text-[68px] text-[40px] ">
           About Us

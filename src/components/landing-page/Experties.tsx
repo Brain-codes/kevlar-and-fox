@@ -4,9 +4,13 @@ import Image from "next/image";
 import ExpertiesTiles from "../tiles/ExpertiesTiles";
 import { ExpertiesItem } from "@/constants";
 
-const Experties = () => {
+type AboutProps = {
+  id: string;
+};
+
+const Experties = ({ id }: AboutProps) => {
   return (
-    <div>
+    <div id={id}>
       <div className="bg-brandBlack py-20 px-[5%]">
         <div className="relative">
           <h1 className="text-white font-[300] md:text-[50px] text-[40px] flex items-center gap-3">

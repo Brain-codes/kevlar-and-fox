@@ -9,6 +9,7 @@ import {
   Underline,
 } from "../../../public/images/rendered-icon";
 import SplitWordAnimation from "../../lib/SplitWordAnimation";
+import Link from "next/link";
 
 type HeroProps = {
   id: string;
@@ -39,6 +40,7 @@ const Hero = ({ id }: HeroProps) => {
 
   return (
     <div
+      id={id}
       className="flex  md:flex-row flex-col-reverse bg-brandBlack justify-between  items-center z-10 "
       style={{
         backgroundImage: "url(/images/hero-bg.svg)",
@@ -77,14 +79,14 @@ const Hero = ({ id }: HeroProps) => {
         <p className="text-white font-light md:text-[17px] text-[12px] md:w-[66%] w-full pt-5">
           <SplitWordAnimation word="Elevating organizations through expert PR strategies, cutting-edge digital transformations, and empowering training solutions." />
         </p>
-        <div className="mt-20 flex items-center gap-1">
+        <Link href="/#contact" className="mt-20 flex items-center gap-1">
           <div className="py-3 font-medium px-7 text-[12px] text-brandBlack rounded bg-brandWhite">
             Contact Us
           </div>
           <div className="py-[8.5px] font-medium px-3 rounded bg-brandWhite/10 backdrop-blur-sm border border-[0.7px] border-white/10">
             <ArrowUpRight className="rotate-[-44deg]" />
           </div>
-        </div>
+        </Link>
       </div>
       <div
         className="md:w-1/2 w-full md:h-[100%] h-[25vh] flex items-end justify-end  object-top relative"

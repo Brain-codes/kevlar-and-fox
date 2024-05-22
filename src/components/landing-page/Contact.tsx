@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
-const Contact = () => {
+type AboutProps = {
+  id: string;
+};
+const Contact = ({ id }: AboutProps) => {
   return (
-    <div className="bg-brandWhite py-[7%] px-[5%]">
+    <div id={id} className="bg-brandWhite py-[7%] px-[5%]">
       {" "}
       <h1 className="font-[800] text-brandBlack md:text-[73px] text-[40px] uppercase leading-tight">
         READY TO EMBARK
@@ -18,7 +21,7 @@ const Contact = () => {
           <span className="font-bold">Kevlar & Fox Consulting</span> today and
           let's make your business dreams a reality
         </p>
-        <div className="relative">
+        <Link href="mailto:info@kevlarandfox.com" className="relative">
           <div className="rounded relative border border-brandBlack py-2 z-[2] px-10 text-brandBlack font-light w-fit text-[17px] bg-brandBlack/10 backdrop-blur-sm">
             Talk to Us
           </div>
@@ -30,7 +33,7 @@ const Contact = () => {
           >
             Talk to Us
           </div>
-        </div>
+        </Link>
       </div>
       <div className="md:mt-[8%]  mt-[80px] flex md:flex-row flex-col md:gap-0 gap-10 justify-between items-center">
         <div className="md:w-25% w-full">
