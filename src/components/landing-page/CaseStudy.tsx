@@ -2,6 +2,7 @@
 import React from "react";
 import { StarIcon, Underline } from "../../../public/images/rendered-icon";
 import Image from "next/image";
+import Link from "next/link";
 type AboutProps = {
   id: string;
 };
@@ -42,7 +43,10 @@ const CaseStudy = ({ id }: AboutProps) => {
                 ARDDEC's <br /> Medical Mission
               </h1>
               <div className="w-full flex justify-end mt-5 ">
-                <div className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer">
+                <Link
+                  href="/projects/1"
+                  className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer"
+                >
                   <StarIcon className="text-lightBlue md:w-10 md:h-10 w-5 h-5" />
                   <div>
                     <p className="font-[400] text-white md:text-[20px] text-[12px]">
@@ -50,7 +54,7 @@ const CaseStudy = ({ id }: AboutProps) => {
                     </p>
                     <div className="border-b group-hover:w-[100%]  w-[0px] transition-all duration-500 "></div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -97,7 +101,10 @@ const CaseStudy = ({ id }: AboutProps) => {
                 TETFUND's TERAS <br /> Ecosystem
               </h1>
               <div className="w-full flex justify-end mt-5 ">
-                <div className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer">
+                <Link
+                  href="/projects/2"
+                  className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer"
+                >
                   <StarIcon className="text-lightBlue md:w-10 md:h-10 w-5 h-5" />
                   <div>
                     <p className="font-[400] text-white md:text-[20px] text-[12px]">
@@ -105,7 +112,7 @@ const CaseStudy = ({ id }: AboutProps) => {
                     </p>
                     <div className="border-b group-hover:w-[100%]  w-[0px] transition-all duration-500 "></div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>{" "}
@@ -121,7 +128,10 @@ const CaseStudy = ({ id }: AboutProps) => {
               IT Incident Management <br /> Transformation
             </h1>
             <div className="w-full flex justify-end mt-5 ">
-              <div className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer">
+              <Link
+                href="/projects/3"
+                className="flex w-fit gap-4 items-center group transition-all duration-500 cursor-pointer"
+              >
                 <StarIcon className="text-lightBlue md:w-10 md:h-10 w-5 h-5" />
                 <div>
                   <p className="font-[400] text-white md:text-[20px] text-[12px]">
@@ -129,7 +139,7 @@ const CaseStudy = ({ id }: AboutProps) => {
                   </p>
                   <div className="border-b group-hover:w-[100%]  w-[0px] transition-all duration-500 "></div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className=" absolute md:block hidden">
               <Image

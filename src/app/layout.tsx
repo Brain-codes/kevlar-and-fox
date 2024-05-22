@@ -26,6 +26,10 @@ const gilmer = localFont({
       path: "../../public/fonts/Gilmer-Heavy.otf",
       weight: "800",
     },
+    {
+      path: "../../public/fonts/Gilmer-Outline.otf",
+      weight: "1000",
+    },
   ],
   variable: "--font-gilmer",
 });
@@ -42,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body className={`${gilmer.variable} font-sans`}>{children}</body>
+      <body className={`${gilmer.variable} font-sans`}>{children}</body>
     </html>
   );
 }
