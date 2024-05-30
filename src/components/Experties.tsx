@@ -15,7 +15,7 @@ const Experties = ({ id }: AboutProps) => {
         <div className="relative">
           <h1 className="text-white font-[300] md:text-[50px] text-[40px] flex items-center gap-3">
             Our
-            <span className="text-lightBlue font-[800]">Experties</span>
+            <span className="text-lightBlue font-[800]">Expertise</span>
             <StarIcon className="text-lightBlue md:w-10 md:h-10 w-5 h-5" />
           </h1>
           <Underline className="text-lightBlue absolute top-[-60%] ml-10 rotate-[-180deg]md:block hidden" />
