@@ -17,9 +17,7 @@ export const generateStaticParams = async () => {
 const Page = ({ params }: { params: { projectsId: number } }) => {
   return (
     <div>
-      <Navbar />
       <ProjectIdWrapper params={params} />
-      <Footer />
     </div>
   );
 };
