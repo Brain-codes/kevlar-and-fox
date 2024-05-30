@@ -60,7 +60,7 @@ export const ExpertiesItem: AllExpertiesProp = {
   items: [
     {
       title: "Public Relations (PR)",
-      image: "/images/prImg.svg",
+      image: "/images/prImg.png",
       imageLeft: true,
       items: [
         {
@@ -177,7 +177,7 @@ export const CaseStudyItems: AllCaseStudyProp = {
     {
       title: "ARDDEC's Medical Mission",
       subtitle: "Enhancing Visibility for ARDDEC's Medical Mission Outreaches",
-      image: "/images/cs1.svg",
+      image: "/images/cs1.png",
       intro:
         "ARDDEC, a distinguished NGO working tirelessly since 1999 to improve healthcare in Nigeria's underserved communities, faced a critical challenge - lack of visibility. Despite their impactful Medical Mission Outreaches, the organization struggled to reach a broader audience to help secure grants from strategic partners. The limited visibility hindered their ability to attract support, engage communities, and amplify the positive impact of their healthcare initiatives.",
       key_issues: [
@@ -332,7 +332,7 @@ export const CaseStudyItems: AllCaseStudyProp = {
     },
     {
       title: "IT Incident Management Transformation",
-      image: "/images/cs3.svg",
+      image: "/images/cs3.png",
       subtitle:
         "IT Incident Management Transformation for a Leading Financial Institution",
       intro:

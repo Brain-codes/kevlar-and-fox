@@ -44,7 +44,7 @@ const About = ({ id }: AboutProps) => {
 
         <div className="relative md:w-[40%] w-full">
           <Image
-            src="/images/about-img.svg"
+            src="/images/about-img.png"
             alt="logo"
             width={100}
             height={100}
