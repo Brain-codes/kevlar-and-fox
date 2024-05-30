@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import { useRouter } from "next/navigation";
 import { CaseStudyItems } from "@/constants";
