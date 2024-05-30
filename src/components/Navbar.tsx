@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
-import { Burger, CloseNav } from "../../../public/images/rendered-icon";
+import { Burger, CloseNav } from "../../public/images/rendered-icon";
 import Link from "next/link";
 import { NavItems } from "@/constants";
 
@@ -131,7 +131,7 @@ const Navbar = () => {
               alt="Logo"
               width={60}
               height={24}
-              priority
+              // priority
               className=""
             />
             <Image
@@ -139,7 +139,7 @@ const Navbar = () => {
               alt="Logo"
               width={100}
               height={44}
-              priority
+              // priority
               className="w-[65%]"
             />
           </div>

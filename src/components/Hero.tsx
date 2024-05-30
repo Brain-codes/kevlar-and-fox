@@ -7,8 +7,8 @@ import {
   ArrowUpRight,
   StarIcon,
   Underline,
-} from "../../../public/images/rendered-icon";
-import SplitWordAnimation from "../../lib/SplitWordAnimation";
+} from "../../public/images/rendered-icon";
+import SplitWordAnimation from "./SplitWordAnimation";
 import Link from "next/link";
 
 type HeroProps = {
@@ -39,7 +39,7 @@ const Hero = ({ id }: HeroProps) => {
   }, [images.length]);
 
   return (
-    <div
+    <section
       id={id}
       className="flex  md:flex-row flex-col-reverse bg-brandBlack justify-between  items-center z-10 "
       style={{
@@ -102,13 +102,13 @@ const Hero = ({ id }: HeroProps) => {
           alt="hero"
           width={100}
           height={100}
-          priority
+          // priority
           className={`transition-opacity duration-1000 ${
             fade ? "opacity-100" : "opacity-0"
           } md:w-[90%] w-full h-full object-cover`}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

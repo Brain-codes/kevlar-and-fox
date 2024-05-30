@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Underline } from "../../../public/images/rendered-icon";
+import { Underline } from "../../public/images/rendered-icon";
 import Image from "next/image";
 
 type AboutProps = {
@@ -9,7 +9,7 @@ type AboutProps = {
 
 const About = ({ id }: AboutProps) => {
   return (
-    <div id={id} className="bg-brandWhite py-20 relative">
+    <section id={id} className="bg-brandWhite py-20 relative">
       <div className="pl-[5%] relative">
         <h1 className="text-deepBlue font-extrabold md:text-[68px] text-[40px] ">
           About Us
@@ -48,7 +48,7 @@ const About = ({ id }: AboutProps) => {
             alt="logo"
             width={100}
             height={100}
-            priority
+            // priority
             className="w-full object-contain  "
           />
           <div className="bottom-[-10%] right-[-5%] absolute">
@@ -58,7 +58,7 @@ const About = ({ id }: AboutProps) => {
                 alt="quote"
                 width={100}
                 height={100}
-                priority
+                // priority
                 className="w-[17px] object-contain absolute top-5 left-5 "
               />
               <p className="ml-5 mb-5 mt-4 text-[300] ">
@@ -69,7 +69,7 @@ const About = ({ id }: AboutProps) => {
                 alt="quote"
                 width={100}
                 height={100}
-                priority
+                // priority
                 className="w-[17px] object-contain absolute bottom-5 right-5 "
               />
             </div>
@@ -82,11 +82,11 @@ const About = ({ id }: AboutProps) => {
           alt="logo"
           width={100}
           height={100}
-          priority
+          // priority
           className="w-1/3 object-contain"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { StarIcon, Underline } from "../../../public/images/rendered-icon";
+import { StarIcon, Underline } from "../../public/images/rendered-icon";
 import Image from "next/image";
 import Link from "next/link";
 type AboutProps = {
@@ -8,7 +8,7 @@ type AboutProps = {
 };
 const CaseStudy = ({ id }: AboutProps) => {
   return (
-    <div
+    <section
       id={id}
       className="bg-brandBlack flex flex-col items-center py-20"
       style={{
@@ -64,7 +64,7 @@ const CaseStudy = ({ id }: AboutProps) => {
               alt="hero"
               width={100}
               height={100}
-              priority
+              // priority
               className="w-full object-contain"
             />
           </div>
@@ -77,7 +77,7 @@ const CaseStudy = ({ id }: AboutProps) => {
               alt="hero"
               width={100}
               height={100}
-              priority
+              // priority
               className="w-full object-contain"
             />
             <Image
@@ -85,7 +85,7 @@ const CaseStudy = ({ id }: AboutProps) => {
               alt="hero"
               width={100}
               height={100}
-              priority
+              // priority
               className="w-full object-contain"
             />
           </div>
@@ -147,14 +147,14 @@ const CaseStudy = ({ id }: AboutProps) => {
                 alt="hero"
                 width={100}
                 height={100}
-                priority
+                // priority
                 className="w-full object-contain"
               />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

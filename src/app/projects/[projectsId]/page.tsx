@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectIdWrapper from "./ProjectIdWrapper";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/landing-page/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const page = ({ params }: { params: { projectsId: number } }) => {
   return (

@@ -7,7 +7,7 @@ type AboutProps = {
 };
 const Contact = ({ id }: AboutProps) => {
   return (
-    <div id={id} className="bg-brandWhite py-[7%] px-[5%]">
+    <section id={id} className="bg-brandWhite py-[7%] px-[5%]">
       {" "}
       <h1 className="font-[800] text-brandBlack md:text-[73px] text-[40px] uppercase leading-tight">
         READY TO EMBARK
@@ -43,7 +43,7 @@ const Contact = ({ id }: AboutProps) => {
               alt="arrow"
               width={100}
               height={100}
-              priority
+              // priority
               className=" object-contain"
             />
           </div>
@@ -84,7 +84,7 @@ const Contact = ({ id }: AboutProps) => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { StarIcon } from "../../../public/images/rendered-icon";
+import { StarIcon } from "../../public/images/rendered-icon";
 import Image from "next/image";
 import { EachExpertiesProp } from "@/types";
 
@@ -56,7 +56,7 @@ const ExpertiesTiles = ({
             alt="Public Relations"
             width={1000}
             height={1000}
-            priority
+            // priority
             className="w-full object-contain"
           />
         </div>

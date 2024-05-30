@@ -1,39 +1,24 @@
+import Hero from "@/components/Hero";
 import Wrapper from "./Wrapper";
-
-export const metadata = {
-  title: "Kevlar & Fox Consulting",
-  description:
-    "Elevating organizations through expert PR strategies, cutting-edge digital transformations, and empowering training solutions.",
-  url: "https://kevlarandfox.com",
-  siteName: "Kevlar & Fox | Home Page ",
-  themeColor: "#3B9BFF",
-  images: [
-    {
-      url: "/images/logo-full.svg",
-      width: 800,
-      height: 600,
-    },
-    {
-      url: "/images/logo-full.svg",
-      width: 1800,
-      height: 1600,
-    },
-  ],
-  icons: {
-    url: "/images/logo-one.svg",
-    apple: "/images/logo-one.svg",
-    shortcut: "/images/logo-one.svg",
-    other: {
-      rel: "kevlar and fox logo",
-      url: "/images/logo-one.svg",
-    },
-  },
-};
+import About from "@/components/About";
+import MissionVision from "@/components/MissionVision";
+import CoreValues from "@/components/CoreValues";
+import Experties from "@/components/Experties";
+import CaseStudy from "@/components/CaseStudy";
+import Contact from "@/components/Contact";
+import Action from "@/components/Action";
 
 export default function Page() {
   return (
-    <>
-      <Wrapper />
-    </>
+    <main>
+      <Hero id="home" />
+      <About id="about" />
+      <MissionVision />
+      <CoreValues />
+      <Experties id="services" />
+      <CaseStudy id="case-studies" />
+      <Contact id="contact" />
+      <Action />
+    </main>
   );
 }

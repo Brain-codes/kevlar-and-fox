@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { StarIcon } from "../../../public/images/rendered-icon";
+import { StarIcon } from "../../public/images/rendered-icon";
 import Slider, { Settings } from "react-slick";
-import CoreValueTiles from "../tiles/CoreValueTiles";
+import CoreValueTiles from "./CoreValueTiles";
 import { CoreValuesItems } from "@/constants";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,8 +36,8 @@ const CoreValues = () => {
     "Latest Releases",
   ];
   return (
-    <div
-      className=""
+    <section
+      className="border-b border-lightBlue"
       style={{
         backgroundImage: "url(/images/lightBG.svg)",
         width: "100%",
@@ -75,7 +75,7 @@ const CoreValues = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

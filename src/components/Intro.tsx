@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import SplitLetterAnimation from "../../lib/SplitLetterAnimation";
-import SplitWordAnimation from "../../lib/SplitWordAnimation";
+import SplitLetterAnimation from "./SplitLetterAnimation";
+import SplitWordAnimation from "./SplitWordAnimation";
 
 type IntroProps = {
   id: string;
@@ -9,7 +9,7 @@ type IntroProps = {
 
 const Intro = ({ id }: IntroProps) => {
   return (
-    <div className="relative bg-brandWhite">
+    <section className="relative bg-brandWhite">
       <div className="px-[5%] z-10 relative pb-[30%] pt-[10%]">
         <h1 className="font-light text-[48px] text-brandBlack ">
           <SplitWordAnimation
@@ -36,11 +36,11 @@ const Intro = ({ id }: IntroProps) => {
           alt="abuja"
           width={100}
           height={100}
-          priority
+          // priority
           className="w-full object-contain"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

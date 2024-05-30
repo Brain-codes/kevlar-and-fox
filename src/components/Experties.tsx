@@ -1,7 +1,7 @@
 import React from "react";
-import { StarIcon, Underline } from "../../../public/images/rendered-icon";
+import { StarIcon, Underline } from "../../public/images/rendered-icon";
 import Image from "next/image";
-import ExpertiesTiles from "../tiles/ExpertiesTiles";
+import ExpertiesTiles from "./ExpertiesTiles";
 import { ExpertiesItem } from "@/constants";
 
 type AboutProps = {
@@ -10,7 +10,7 @@ type AboutProps = {
 
 const Experties = ({ id }: AboutProps) => {
   return (
-    <div id={id}>
+    <section id={id}>
       <div className="bg-brandBlack py-20 px-[5%]">
         <div className="relative">
           <h1 className="text-white font-[300] md:text-[50px] text-[40px] flex items-center gap-3">
@@ -44,7 +44,7 @@ const Experties = ({ id }: AboutProps) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

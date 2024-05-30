@@ -1,7 +1,7 @@
 "use client";
-import CaseStudy from "@/components/landing-page/CaseStudy";
-import Footer from "@/components/landing-page/Footer";
-import Navbar from "@/components/navbar/Navbar";
+import CaseStudy from "@/components/CaseStudy";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import React from "react";
 
 const ProjectsWrapper = () => {

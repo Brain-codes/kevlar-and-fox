@@ -1,24 +1,23 @@
 "use client";
 
 import React from "react";
-import About from "@/components/landing-page/About";
-import CoreValues from "@/components/landing-page/CoreValues";
-import Hero from "@/components/landing-page/Hero";
-import Intro from "@/components/landing-page/Intro";
-import MissionVision from "@/components/landing-page/MissionVision";
-import Navbar from "@/components/navbar/Navbar";
+import About from "@/components/About";
+import CoreValues from "@/components/CoreValues";
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import MissionVision from "@/components/MissionVision";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { ParallaxProvider } from "react-scroll-parallax";
 import CustomCursor from "@/lib/CustomCursor";
 import useSmoothScroll from "@/lib/useSmoothScroll";
-import Experties from "@/components/landing-page/Experties";
-import CaseStudy from "@/components/landing-page/CaseStudy";
-import Contact from "@/components/landing-page/Contact";
-import Action from "@/components/landing-page/Action";
-import Footer from "@/components/landing-page/Footer";
+import Experties from "@/components/Experties";
+import CaseStudy from "@/components/CaseStudy";
+import Contact from "@/components/Contact";
+import Action from "@/components/Action";
+import Footer from "@/components/Footer";
 
 const Wrapper = () => {
-  // useSmoothScroll();
 
   return (
     <>

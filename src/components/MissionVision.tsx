@@ -1,10 +1,10 @@
 import React from "react";
-import { StarIcon, Underline } from "../../../public/images/rendered-icon";
+import { StarIcon, Underline } from "../../public/images/rendered-icon";
 import Image from "next/image";
 
 const MissionVision = () => {
   return (
-    <div
+    <section
       className="px-[5%] py-[7%] h-fit flex items-center justify-between md:flex-row flex-col"
       style={{
         backgroundImage: "url(/images/hero-bg.svg)",
@@ -33,7 +33,7 @@ const MissionVision = () => {
           alt="our mission"
           width={100}
           height={100}
-          priority
+          // priority
           className="md:w-[25%] w-full object-contain"
         />
       </div>
@@ -44,7 +44,7 @@ const MissionVision = () => {
           alt="our vision"
           width={100}
           height={100}
-          priority
+          // priority
           className="md:w-[25%] w-full object-contain"
         />
         <p className="text-white font-light md:text-[17px] text-[12px] md:pt-5">
@@ -61,7 +61,7 @@ const MissionVision = () => {
           <Underline className="text-lightBlue absolute bottom-[-60%] ml-10 md:block hidden" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -51,7 +51,7 @@ const ProjectIdWrapper = ({ params }: { params: { projectsId: number } }) => {
             alt="logo"
             width={100}
             height={100}
-            priority
+            // priority
             className="w-[40px]"
           />{" "}
         </div>
@@ -74,7 +74,7 @@ const ProjectIdWrapper = ({ params }: { params: { projectsId: number } }) => {
             alt="hero"
             width={100}
             height={100}
-            priority
+            // priority
             className="w-full object-contain"
           />
         </div>
@@ -104,7 +104,7 @@ const ProjectIdWrapper = ({ params }: { params: { projectsId: number } }) => {
                       alt="hero"
                       width={100}
                       height={100}
-                      priority
+                      // priority
                       className="w-[43.13px] object-contain"
                     />
                   </div>
@@ -142,7 +142,7 @@ const ProjectIdWrapper = ({ params }: { params: { projectsId: number } }) => {
                     alt="hero"
                     width={100}
                     height={100}
-                    priority
+                    // priority
                     className="w-[43.13px] object-contain"
                   />
                 </div>
@@ -176,7 +176,7 @@ const ProjectIdWrapper = ({ params }: { params: { projectsId: number } }) => {
                       alt="hero"
                       width={100}
                       height={100}
-                      priority
+                      // priority
                       className="w-[43.13px] object-contain"
                     />
                   </div>

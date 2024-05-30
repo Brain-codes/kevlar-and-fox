@@ -12,14 +12,14 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-brandBlack flex md:flex-row flex-col md:gap-0 gap-10 md:items-end justify-between py-10 px-[5%] w-full">
+    <section className="bg-brandBlack flex md:flex-row flex-col md:gap-0 gap-10 md:items-end justify-between py-10 px-[5%] w-full">
       <div className="">
         <Image
           src="/images/logo-full.svg"
           alt="logo"
           width={100}
           height={100}
-          priority
+          // priority
           className="md:w-full w-[120px] object-contain"
         />
       </div>
@@ -71,7 +71,7 @@ const Footer = () => {
             alt="arrow"
             width={100}
             height={100}
-            priority
+            // priority
             className="md:w-full w-[20px] object-contain"
           />
         </div>
@@ -79,7 +79,7 @@ const Footer = () => {
           back <br /> to top
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
