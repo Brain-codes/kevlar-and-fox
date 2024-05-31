@@ -86,7 +86,7 @@ export const ExpertiesItem: AllExpertiesProp = {
         {
           title: "Content Creation/Production",
           description:
-            "Generating engaging and relevant content across various platforms and mediums, including written articles, press releases, social media posts, blog entries, videos, infographics, and more. This includes ideation, creation, and distribution of content to effectively communicate your brand's message and engage with your audience.",
+            "Creating engaging content for various platforms, including articles, press releases, social media posts, blogs, videos, and infographics. This involves ideation, creation, and distribution to effectively convey your brand's message and engage your audience.",
         },
         {
           title: "Crisis PR",
@@ -96,7 +96,7 @@ export const ExpertiesItem: AllExpertiesProp = {
         {
           title: "Social Media Management",
           description:
-            "We offer a tailored approach to enhance your online presence. Our expert team provides comprehensive management of your social media channels, from content creation to community engagement, ensuring consistent messaging aligned with your brand identity and business goals. By leveraging data-driven insights, we continuously refine strategies to maximise reach and impact, driving tangible results such as increased brand awareness and customer engagement.",
+            "We provide tailored social media management, creating and engaging content that aligns with your brand, leveraging data-driven insights to maximize reach, impact, and drive tangible results.",
         },
       ],
     },

@@ -24,9 +24,9 @@ const MissionVision = () => {
           <Underline className="text-lightBlue absolute bottom-[-60%] ml-10 md:block hidden" />
         </div>
         <p className="text-white font-light md:text-[17px] text-[12px] md:pt-5">
-          We deliver bespoke consultancy services in Public Relations, Digital
-          Transformation, and Skills Development, while cultivating lasting
-          relationships.
+          We are a dynamic consultancy providing bespoke Public Relations,
+          Digital Transformation, and Skills Development services, while
+          cultivating lasting relationships
         </p>
         <Image
           src="/images/missionImg.svg"

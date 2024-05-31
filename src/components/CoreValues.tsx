@@ -66,7 +66,7 @@ const CoreValues = () => {
           <StarIcon className="text-lightBlue md:w-20 md:h-20 w-10 h-10 ml-3" />
         </h1>
       </div>
-      <div className="my-[10%] px-[5%]">
+      <div className="mb-[10%] md:mt-0 mt-[20px]  px-[5%]">
         {CoreValuesItems.items.map((data, index) => (
           <CoreValueTiles
             title={data.title}

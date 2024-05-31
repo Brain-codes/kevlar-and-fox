@@ -51,7 +51,7 @@ const About = ({ id }: AboutProps) => {
             // priority
             className="w-full object-contain  "
           />
-          <div className="bottom-[-10%] right-[-5%] absolute">
+          {/* <div className="bottom-[-10%] right-[-5%] absolute">
             <div className="bg-lightBlue w-[240px] py-6 px-[20px] rounded-lg">
               <Image
                 src="/images/quote.svg"
@@ -73,7 +73,7 @@ const About = ({ id }: AboutProps) => {
                 className="w-[17px] object-contain absolute bottom-5 right-5 "
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute w-full top-0 z-[1]">

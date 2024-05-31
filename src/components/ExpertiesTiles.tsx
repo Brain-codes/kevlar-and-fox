@@ -11,13 +11,11 @@ const ExpertiesTiles = ({
 }: EachExpertiesProp) => {
   return (
     <div
-      className={`${
-        imageLeft ? "" : "bg-brandBlack text-brandWhite "
-      } md:mt-20 py-20`}
+      className={`${imageLeft ? "" : "bg-brandBlack text-brandWhite "} pt-20 pb-20`}
     >
       {" "}
       <h1 className="px-[5%] mb-20 flex gap-4 items-center font-[800] md:text-[73px] text-[40px] leading-[48px]">
-        <StarIcon className=" md:w-[80px] md:h-[80px]" />
+        <StarIcon className=" md:w-[80px] md:h-[80px] " />
         {title}
       </h1>
       <div

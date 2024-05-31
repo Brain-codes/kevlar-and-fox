@@ -25,7 +25,7 @@ const Experties = ({ id }: AboutProps) => {
         </p>
       </div>
       <div
-        className="py-[3%]"
+        className="pb-[3%]"
         style={{
           backgroundImage: "url(/images/lightBG.svg)",
           width: "100%",
