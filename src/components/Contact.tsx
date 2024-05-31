@@ -53,9 +53,18 @@ const Contact = ({ id }: AboutProps) => {
             SOCIALS
           </h2>
           <div className="flex gap-5">
-            <SocialsItem href="ig.com" value="IG" />
-            <SocialsItem href="ig.com" value="LI" />
-            <SocialsItem href="ig.com" value="TK" />
+            <SocialsItem
+              href="https://www.instagram.com/kevlar-and-fox-consulting"
+              value="IG"
+            />
+            <SocialsItem
+              href="https://www.linkedin.com/company/kevlar-and-fox-consulting "
+              value="LI"
+            />
+            <SocialsItem
+              href="https://www.tiktok.com/kevlar-and-fox-consulting"
+              value="TK"
+            />
           </div>
         </div>
         <div className="flex flex-col md:w-25% w-full">
@@ -80,7 +89,7 @@ const Contact = ({ id }: AboutProps) => {
             LOCATION
           </h2>
           <p className=" text-[19px] text-brandBlack font-[300]  w-full leading-tight font-[400]">
-            447 Broadway, 2nd Floor #1125 New York, NY 10013 United States
+            17 Isah Mohammed Street, Apo, Abuja, FCT
           </p>
         </div>
       </div>
