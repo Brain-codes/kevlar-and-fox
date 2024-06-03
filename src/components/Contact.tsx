@@ -62,7 +62,7 @@ const Contact = ({ id }: AboutProps) => {
               value="LI"
             />
             <SocialsItem
-              href="https://www.tiktok.com/kevlar-and-fox-consulting"
+              href="https://www.tiktok.com/@kevlar.and.fox?_t=8msFiKquAcf&_r=1"
               value="TK"
             />
           </div>
@@ -79,9 +79,9 @@ const Contact = ({ id }: AboutProps) => {
           </a>
           <a
             href="tel:2349121872425"
-            className=" text-[19px] font-[400] text-brandBlack font-[300] w-full leading-tight"
+            className=" text-[19px] text-brandBlack font-[300] w-full leading-tight"
           >
-            234-912-187-2425
+            +234-912-187-2425
           </a>
         </div>{" "}
         <div className="md:w-25% w-full">
